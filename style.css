@@ -1,3 +1,54 @@
-*{
-    background-color: blue;
+@font-face {
+    font-family: egory-castle-personal;
+    src: url(./EgorycastlePersonal.ttf);
+}
+
+body{
+    display:flex;
+    height: 100vh;
+
+}
+
+div{
+    display:flex;
+}
+
+.logo{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1,1,1,.5);
+    flex: 0 0 20%;
+}
+
+#logo-text{
+    font-family: egory-castle-personal;
+    font-size: 60px;
+}
+
+.left-screen{
+    background-image: url("./burgers.jpg");
+    background-size: auto 100%;
+}
+
+.right-screen{
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+}
+
+.inputs{
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+}
+
+.buttons{
+    flex-direction: column;
+}
+
+.column{
+    flex-direction: column;
+    margin: 0 30px; 
+}
+.above-columns{
+    margin: 20px 30px;
 }
