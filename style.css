@@ -45,6 +45,11 @@ div{
     flex: 1 1 60vw;
 }
 
+.fonted{
+    font-family: cursive;
+    font-size: 30px;
+}
+
 .inputs{
     flex-direction: column;
     background-color: white;
@@ -62,6 +67,7 @@ div{
     background-color: blueviolet;
     height: 70px;
     width: 150px;
+    font-size: 16px;
     margin:0;
 }
 
