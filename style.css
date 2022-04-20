@@ -3,18 +3,28 @@
     src: url(./EgorycastlePersonal.ttf);
 }
 
-.container{
-    height: 100vh;
-    width: 100vw;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    margin:20px 0;
 }
 
 div{
     display:flex;
 }
 
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
 .logo{
     justify-content: center;
     align-items: center;
+    width:auto;
     background-color: rgb(1,1,1,.5);
 }
 
@@ -31,11 +41,11 @@ div{
     flex-direction: column;
     justify-content: center;
     background-image: url("./burgers.jpg");
-    background-size: auto 100%;
+    background-size: auto;
     background-position:center;
     background-repeat: no-repeat;
 
-    flex: 1 1 40vw;
+    width:40%;
 }
 
 .right-screen{
@@ -64,10 +74,14 @@ div{
 }
 
 .buttons button{
+    box-sizing: content-box;
+    border: 8px solid blueviolet;
+    height: 50px;
+    width: 120px;
     background-color: blueviolet;
-    height: 70px;
-    width: 150px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 900;
+    padding:10px;
     margin:0;
 }
 
@@ -77,4 +91,17 @@ div{
 }
 .above-columns{
     margin: 20px 30px;
+}
+
+/* interactive attributes */
+
+input:focus{
+    outline-color: blue;
+    box-shadow: 5px 5px rgb(207, 206, 206);
+}
+
+button:hover{
+    color:blueviolet;
+    background-color: black;
+    border: 8px solid blueviolet;
 }
